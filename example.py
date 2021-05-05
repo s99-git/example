@@ -1,10 +1,17 @@
-from guizero import App, Text
-from tkinter import Spinbox
+from tkinter import *
 
-app = App()
-text = Text(app, text="A Spinbox widget")
+window = Tk()
 
-spinbox = Spinbox(from_=0, to=10)
-app.add_tk_widget(spinbox)
+window.title("Welcome to LikeGeeks app")
 
-app.display()
+window.geometry('350x200')
+
+lbl = Label(window, text="Hello")
+
+lbl.grid(column=0, row=0)
+
+btn = Button(window, text="Click Me")
+
+btn.grid(column=1, row=0)
+
+window.mainloop()
